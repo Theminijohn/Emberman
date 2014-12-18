@@ -1,4 +1,5 @@
 Emberman.Router.map(function() {
-  this.resource('stories');
-  this.resource('story', { path: '/stories/:story_id' });
+  this.resource('stories', function() {
+    this.resource('story', { path: ':story_id' });
+  });
 });
