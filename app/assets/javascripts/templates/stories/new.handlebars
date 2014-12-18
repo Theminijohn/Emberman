@@ -1,0 +1,19 @@
+<form {{action 'create' this on='submit'}}>
+  
+  {{#if isSaving}}
+    <p> Saving Record </p>
+  {{/if}}
+
+  <p>
+    {{input type="text" value=title placeholder="Title"}}
+  </p>
+
+  <p>
+    {{textarea value=body placeholder="Body"}}
+  </p>
+
+  <button>
+    Create Story
+  </button>
+
+</form>

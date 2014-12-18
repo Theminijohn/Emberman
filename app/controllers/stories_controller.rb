@@ -8,4 +8,14 @@ class StoriesController < ApplicationController
     render json: Story.find(params[:id])
   end
 
+  def create
+    render json: Story.create(story_params)
+  end
+
+  private
+  
+  def story_params
+    params[:story].permit(:title, :body)
+  end
+
 end
