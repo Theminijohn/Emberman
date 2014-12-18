@@ -8,3 +8,5 @@
 // for more details see: http://emberjs.com/guides/application/
 Emberman = Ember.Application.create();
 
+Emberman.ApplicationAdapter = DS.RESTAdapter;
+

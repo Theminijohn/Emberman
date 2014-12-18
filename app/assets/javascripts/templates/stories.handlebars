@@ -1,0 +1,11 @@
+<h1>Stories</h1>
+
+<ul>
+  {{#each}}
+    <li>
+      {{#link-to 'story' this}}
+        {{title}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
